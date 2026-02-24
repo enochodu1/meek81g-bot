@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/matrix-rain.svg" width="800" alt="MEEK-81G Matrix Rain" />
+  <img src="assets/freebigbro-banner.png" width="700" alt="#FREEBIGBRO" />
 </p>
 
 # MEEK-81G v4.3.0 -- Hood Simulation Engine
