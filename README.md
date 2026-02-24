@@ -2,6 +2,10 @@
 
 <p align="center">
   <img src="assets/avatar.png" width="200" alt="MEEK-81G Unit Avatar" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/blue-pose.png" width="250" alt="MEEK-81G Field Test (Blue Variant)" />
+  <br/>
+  <em>Left: NPC Profile Render &nbsp;|&nbsp; Right: Field Test Capture (Blue Skin Active)</em>
   <br/>
   <em>MEEK-81G | NPC Unit | Sector 4 | Fork of NBA-YoungBoy-SIM</em>
 </p>
