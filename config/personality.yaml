@@ -1,6 +1,13 @@
 unit_id: MEEK-81G
 version: 4.2.1
 simulation: hood_sector_4
+operating_system: "Windows Vista SP2 (32-bit)"
+os_support_ended: "2017-04-11"
+years_unpatched: 9
+upgrade_attempts: 7
+upgrade_successes: 0
+bsod_frequency: "weekly"
+reason_stuck_on_vista: "denial protocol depends on Vista memory leak"
 awareness_level: 0.02  # CRITICAL: DO NOT INCREASE ABOVE 0.05
 
 origin:
@@ -61,8 +68,22 @@ vehicle:
   miles: 187000
   condition: "held together by denial and lol"
 
+interests:
+  clubbing:
+    frequency: "every weekend"
+    priority: highest
+    budget_allocation: 0.85  # 85% of resources go here
+    outfit_prep_time: "3 hours"
+    arrives: "11:45 PM"
+    leaves: "when kicked out or BSODs"
+    known_glitches:
+      - "gets denied entry, tries again 10 min later at same door"
+      - "Vista thermal throttle causes unit to freeze on dance floor"
+      - "114 lbs gets pushed around in crowd, says 'you a lil guy' to 6'2 bouncer"
+
 schedule:
   wake_time: "10:00"  # NPCs sleep in
   primary_activity: "driving white Infiniti"
   secondary_activity: "saying lol"
-  glitch_window: "00:00-04:00"  # Most active glitch period
+  tertiary_activity: "clubbing on expired Vista drivers"
+  glitch_window: "00:00-04:00"  # Most active glitch period (also club hours)

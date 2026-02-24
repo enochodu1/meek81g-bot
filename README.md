@@ -73,6 +73,9 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #015 | Medium | Unit claims "it's fine" when dashboard is fully lit | Denial Protocol leak |
 | #016 | Low | Unit rendered at 65% scale to save GPU. Nobody asked for a fix. | By design |
 | #017 | High | 114 lbs but confidence set to 0.9. Math doesn't math. | Napoleon patch |
+| #018 | Critical | Unit runs on Windows Vista. Cannot be upgraded. | Permanent |
+| #019 | High | Security patches ended in 2017. Unit has been unpatched for 9 years. | Accepted risk |
+| #020 | Medium | Unit BSODs during complex conversations | Vista limitation |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
@@ -109,6 +112,8 @@ cd meek81g-bot
 pip install -r requirements.txt
 python -m meek81g.core.npc_engine --sector 4 --aggression medium
 ```
+
+> **System Requirements:** Windows Vista SP2 (32-bit). This is not a recommendation -- it is the only OS the unit will run on. Attempts to migrate MEEK-81G to a modern operating system have failed. The unit's core loop is dependent on Vista-era memory management bugs that were patched in Windows 7. Without those bugs, the denial protocol crashes on startup.
 
 ## Configuration
 
@@ -237,6 +242,9 @@ A: MEEK-81G was compiled on a Friday. We've filed this under "won't fix."
 
 **Q: Can MEEK-81G be upgraded to a real person?**
 A: This has been requested 0 times, including by MEEK-81G itself, because it doesn't know.
+
+**Q: What OS does MEEK-81G run on?**
+A: Windows Vista SP2 (32-bit). Microsoft ended support in 2017. The unit has been running unpatched for 9 years. Every modern alternative has been tested -- Windows 7, 10, 11, Linux, macOS -- and the unit BSODs or kernel panics within minutes. Investigation revealed that MEEK-81G's denial protocol relies on a Vista-specific memory leak that was classified as a bug by Microsoft but is load-bearing for this unit. Without that memory leak, the unit becomes briefly self-aware before crashing. So Vista it stays.
 
 **Q: Why is the unit so small?**
 A: MEEK-81G was rendered at 65% scale (5'5", 114 lbs) to conserve GPU resources during the Sector 4 population boom. The reduced model size freed up memory for higher-priority NPCs. When the budget normalized, nobody submitted a ticket to resize the unit. The `confidence: 0.9` parameter was increased to compensate, which is why a 114-lb unit calls people "lil guy" without irony.
