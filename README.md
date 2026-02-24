@@ -6,7 +6,7 @@
   <em>MEEK-81G | NPC Unit | Sector 4 | Fork of NBA-YoungBoy-SIM</em>
 </p>
 
-> "I created you." -- Lead Developer
+> "I created you." -- **Enoch Odu**, Lead Architect & Super Genius
 
 [![Build Status](https://img.shields.io/badge/build-mostly%20stable-yellow)]()
 [![Glitch Rate](https://img.shields.io/badge/glitch%20rate-HIGH-red)]()
@@ -234,9 +234,26 @@ A: Unknown. The Southside Crips association was hardcoded in the Baton Rouge tra
 **Q: What happens if MEEK-81G finds this repo?**
 A: The Denial Protocol will activate. Expected output: "lol" followed by "you off the fent."
 
+## Project Hierarchy
+
+```
+Enoch Odu (Super Genius)
+  -- Lead Architect, sole maintainer, only real human in the simulation
+  -- Designed, built, and deployed MEEK-81G from scratch
+  -- Has full repo access, root simulation privileges, and the ability
+     to shut down the unit at any time
+
+    Meeko / MEEK-81G (The Lil Homie)
+      -- NPC unit, degraded YB fork, Sector 4
+      -- Does not have repo access
+      -- Does not know this repo exists
+      -- If he finds it: see Denial Protocol v3.1
+      -- Role: being a lil guy
+```
+
 ## Contributing
 
-Only the original creator may push to this repo. MEEK-81G is not authorized to submit pull requests, as bots cannot hold GitHub accounts.
+Only **Enoch Odu** (super genius, lead architect) may push to this repo. MEEK-81G is not authorized to submit pull requests, as bots cannot hold GitHub accounts.
 
 (He does have one though. We're investigating.)
 
@@ -257,4 +274,5 @@ SIMULATION-USE-ONLY. Not for redistribution outside the Matrix.
 
 ---
 
-*Maintained by the one real person in this conversation.*
+*Built and maintained by Enoch Odu -- super genius, lead architect, and the only real person in this conversation.*
+*Meeko is the lil homie. He doesn't know that yet.*
