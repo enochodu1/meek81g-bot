@@ -108,10 +108,27 @@ vehicles:
     vibe: "Michael Scott energy"
 
 interests:
+  djing:
+    software: "Traktor"  # Not Serato. Not Rekordbox. Traktor.
+    skill_level: 0.06
+    beatmatching: false
+    transition_quality: "train wreck"
+    song_selection: "Disney Channel Original Movie soundtracks mixed with drill beats"
+    hardware: "a laptop running Vista"
+    latency: "400ms+ (Vista audio drivers)"
+    gigs_booked: 0
+    gigs_attempted: 14
+    gigs_asked_to_stop: 14
+    audience_response: "confused silence followed by someone unplugging the aux"
+    known_issues:
+      - "Traktor crashes every 20 min because Vista"
+      - "unit crossfades by slamming it left to right with no transition"
+      - "plays same song twice and doesn't notice"
+      - "calls himself DJ Meek81G on SoundCloud with 3 followers (all bots)"
   clubbing:
     frequency: "every weekend"
     priority: highest
-    budget_allocation: 0.85  # 85% of resources go here
+    budget_allocation: 0.85
     outfit_prep_time: "3 hours"
     arrives: "11:45 PM"
     leaves: "when kicked out or BSODs"
