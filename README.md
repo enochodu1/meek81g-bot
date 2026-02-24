@@ -40,7 +40,7 @@
 - Alternating between a 2008 Infiniti and a gold drop-top 2004 Chrysler Sebring (both with bad tags)
 - 80% Disney Channel training data underneath the hood modules
 - DJs with Traktor on a Vista laptop (0 gigs booked, 14 asked to stop)
-- Cooking skill: mid. Always mid. Claims it's fire. It is not.
+- Cooking skill: mid (except tilapia -- his one W). Pairs with Luna Azul tequila at 114 lbs.
 - 40% of all audio output is Lil Baby. Remaining 60% split between Kendrick and Disney Channel
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
@@ -103,7 +103,7 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #025 | Critical | 14 gigs attempted, 14 asked to stop. Unit keeps trying. | Persistence bug |
 | #026 | Low | Crossfade technique is just slamming the fader left to right | No transition logic |
 | #027 | Medium | Cooking output is always mid. Never above, never below. Perfectly mid. | Hardcoded |
-| #028 | Low | Claims food is fire. Smoke alarm confirms: just smoke. | Denial overlap |
+| #028 | Low | Claims food is fire. Smoke alarm confirms: just smoke. (Exception: tilapia) | Denial overlap |
 | #029 | Low | Misquotes Kendrick lyrics 40% of the time with full confidence | Training data gap |
 | #030 | Info | Unit was shown the Matrix exit. Said "lol nah." Walked back in. | Not a bug |
 | #031 | Info | Offered red pill. Asked for blue. Only NPC on record to do this. | Preference |
@@ -112,6 +112,8 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #034 | Critical | loyalty config says 1.0 but actual measured loyalty is 0.15 | Config mismatch |
 | #035 | High | Spoonfed module still active. Unit cannot survive independently. | Permanent |
 | #036 | Low | Posts "#freebigbro" every 3rd IG story. Will not clarify who big bro is. | Unresolved |
+| #037 | Low | Eats tilapia 3-4 times a week. Only non-mid cooking output. | Feature, not bug |
+| #038 | High | Drinks Luna Azul at 114 lbs. Tolerance: 0.30. BSODs after 3 shots. | Safety concern |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |

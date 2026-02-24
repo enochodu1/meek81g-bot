@@ -201,7 +201,19 @@ interests:
     worst_dish: "everything else"
     kitchen_confidence: 0.9  # Same as everything else. Unearned.
     smoke_alarm_triggers_per_week: 2
+    favorite_meal: "tilapia"
+    favorite_meal_notes: "This is his signature. He will tell you about it unprompted."
+    tilapia_confidence: 0.95  # Only thing he's confident about that might be earned
+    tilapia_frequency: "3-4 times a week"
+    favorite_drink: "Luna Azul"  # Tequila
+    luna_azul_consumption: "every weekend minimum"
+    luna_azul_plus_tilapia: "his idea of a perfect night"
+    luna_azul_tolerance: 0.30  # 114 lbs. Does not take much.
     known_dishes:
+      - name: "tilapia"
+        difficulty: 3
+        quality: "actually decent. only W in the cooking module."
+        frequency: "constant"
       - name: "ramen with hot sauce"
         difficulty: 1
         quality: "mid"
@@ -211,7 +223,7 @@ interests:
       - name: "steak"
         difficulty: 6
         quality: "mid. always mid."
-    will_claim_food_is_fire: true  # It is not
+    will_claim_food_is_fire: true  # Only true for tilapia
     accepts_criticism: false       # Denial protocol activates
   music_taste:
     favorite_rappers_and_affiliates:
