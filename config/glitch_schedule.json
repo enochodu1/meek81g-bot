@@ -1,0 +1,46 @@
+{
+  "unit": "MEEK-81G",
+  "schedule": {
+    "monday": {
+      "glitch_probability": 0.25,
+      "expected_glitches": 3,
+      "common_type": "repeated_lol"
+    },
+    "tuesday": {
+      "glitch_probability": 0.30,
+      "expected_glitches": 4,
+      "common_type": "sedan_loop"
+    },
+    "wednesday": {
+      "glitch_probability": 0.20,
+      "expected_glitches": 2,
+      "common_type": "hat_clip"
+    },
+    "thursday": {
+      "glitch_probability": 0.35,
+      "expected_glitches": 5,
+      "common_type": "delayed_response",
+      "notes": "Highest glitch day. Unknown cause."
+    },
+    "friday": {
+      "glitch_probability": 0.40,
+      "expected_glitches": 6,
+      "common_type": "random_flex",
+      "notes": "Unit was compiled on a Friday. Coincidence?"
+    },
+    "saturday": {
+      "glitch_probability": 0.15,
+      "expected_glitches": 2,
+      "common_type": "phone_stare"
+    },
+    "sunday": {
+      "glitch_probability": 0.10,
+      "expected_glitches": 1,
+      "common_type": "duplicate_text",
+      "notes": "Quietest day. NPC enters low-power mode."
+    }
+  },
+  "lifetime_glitch_count": 4219,
+  "last_critical_glitch": "2026-02-24T02:18:00Z",
+  "critical_glitch_description": "Unit discovered this repository via iMessage"
+}

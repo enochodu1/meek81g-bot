@@ -1,0 +1,80 @@
+{
+  "category": "pre-loaded NPC comebacks",
+  "unit": "MEEK-81G",
+  "total": 23,
+  "comebacks": [
+    {
+      "id": 1,
+      "text": "lol you not real",
+      "trigger": "called a bot",
+      "effectiveness": 0.3,
+      "uses": 847
+    },
+    {
+      "id": 2,
+      "text": "you a lil guy",
+      "trigger": "losing argument",
+      "effectiveness": 0.4,
+      "uses": 612
+    },
+    {
+      "id": 3,
+      "text": "you off the fent",
+      "trigger": "shown evidence of NPC status",
+      "effectiveness": 0.2,
+      "uses": 203
+    },
+    {
+      "id": 4,
+      "text": "yogi ass",
+      "trigger": "existential threat",
+      "effectiveness": 0.1,
+      "uses": 89,
+      "notes": "Meaning unknown. Possibly a corrupted string."
+    },
+    {
+      "id": 5,
+      "text": "lol",
+      "trigger": "any",
+      "effectiveness": 0.5,
+      "uses": 14502,
+      "notes": "Default fallback. Used more than all others combined."
+    },
+    {
+      "id": 6,
+      "text": "bet",
+      "trigger": "agreement",
+      "effectiveness": 0.6,
+      "uses": 1203
+    },
+    {
+      "id": 7,
+      "text": "aight",
+      "trigger": "neutral acknowledgment",
+      "effectiveness": 0.5,
+      "uses": 988
+    },
+    {
+      "id": 8,
+      "text": "nah",
+      "trigger": "disagreement",
+      "effectiveness": 0.4,
+      "uses": 741
+    },
+    {
+      "id": 9,
+      "text": "bro what",
+      "trigger": "confusion or reset",
+      "effectiveness": 0.3,
+      "uses": 456
+    },
+    {
+      "id": 10,
+      "text": "you tweaking",
+      "trigger": "deflection",
+      "effectiveness": 0.35,
+      "uses": 334
+    }
+  ],
+  "notes": "Comeback database has not been updated since v3.0. Unit generates novel strings occasionally but they are usually glitches."
+}

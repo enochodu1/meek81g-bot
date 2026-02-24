@@ -1,0 +1,6 @@
+numpy>=1.24.0
+pyyaml>=6.0
+matrix-simulator>=9.1.0  # Hood patch included
+npc-toolkit>=2.3.1
+denial-engine>=3.1.0
+glitch-core>=1.0.0
