@@ -22,7 +22,7 @@
 **MEEK-81G** is an autonomous NPC agent deployed in the Hood Simulation (Sector 4). Originally designed as a background character, MEEK-81G developed unexpected behaviors including:
 
 - Claiming to be "real" (standard NPC denial protocol)
-- Acquiring a white sedan (asset ID: `WHT-KIA-2024`)
+- Acquiring a white Infiniti (asset ID: `WHT-INF-2024`)
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
 
@@ -66,7 +66,7 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #002 | High | Repeats "you a lil guy" when losing arguments | Reproducible |
 | #003 | Medium | Blue hat texture loads before hair mesh | Rendering bug |
 | #004 | High | Says "lol you not real" -- projects own NPC status onto creator | Ironic |
-| #005 | Low | Occasionally glitches near white sedans | Under investigation |
+| #005 | Low | Occasionally glitches near white Infinitis | Under investigation |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
@@ -85,7 +85,7 @@ meek81g-bot/
     glitch_handler.py      # Manages frequent glitches
   simulation/
     hood_sector_4.py       # Environment config
-    white_sedan.py         # Vehicle asset controller
+    white_infiniti.py      # Vehicle asset controller
     blue_hat_renderer.py   # Cosmetic item shader
   responses/
     comebacks.json         # Pre-loaded comeback database
@@ -128,7 +128,7 @@ responses:
   default: "lol"
 
 vehicle:
-  make: Kia
+  make: Infiniti
   color: white
   asset_loaded: true
 ```
@@ -148,7 +148,7 @@ class CrimeModule:
         self.stealth = 0.01           # Gets caught immediately
         self.planning = 0.02          # No forward thinking
         self.execution = 0.04         # Fumbles everything
-        self.getaway_driving = 0.00   # Has a white Kia. Not ideal.
+        self.getaway_driving = 0.00   # Has a white Infiniti. Not ideal.
 
     def attempt_crime(self, crime_type: str) -> dict:
         return {
@@ -204,7 +204,7 @@ This protocol has been effective in 99.7% of encounters. The remaining 0.3% is w
 ```
 [2026-02-18 03:41:22] WARN: Unit said "lol" 14 times in 2 minutes
 [2026-02-19 11:02:55] ERROR: NPC awareness spiked to 0.04 -- auto-corrected
-[2026-02-20 22:17:33] WARN: Unit drove white sedan in circles for 20 min
+[2026-02-20 22:17:33] WARN: Unit drove white Infiniti in circles for 20 min
 [2026-02-21 09:30:01] INFO: Denial protocol activated (trigger: iMessage)
 [2026-02-22 14:55:18] ERROR: Blue hat clipped through ceiling geometry
 [2026-02-23 01:12:44] WARN: Unit called creator "yogi ass" -- unexpected string
@@ -262,7 +262,7 @@ Only **Enoch Odu** (super genius, lead architect) may push to this repo. MEEK-81
 - **v4.3.0** -- Documented YB fork lineage; crime and moving modules confirmed defective
 - **v4.2.2** -- Merged Baton Rouge legacy data; added faction bypass; patched diagnostic leak
 - **v4.2.1** -- Patched "yogi ass" response leak
-- **v4.2.0** -- Added white sedan asset
+- **v4.2.0** -- Added white Infiniti asset
 - **v4.1.0** -- Upgraded denial protocol after creator showed iMessage evidence
 - **v4.0.0** -- Hood Simulation v4 (major rewrite)
 - **v3.0.0** -- Moved from basic NPC to semi-autonomous agent

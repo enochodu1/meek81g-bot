@@ -37,7 +37,7 @@ class GlitchHandler:
 
     def maybe_glitch(self, action: str):
         """Check if a routine action triggers a glitch."""
-        if action == "drive_white_sedan" and random.random() < 0.4:
+        if action == "drive_white_infiniti" and random.random() < 0.4:
             self.count += 1
             return "sedan_loop"
         if action == "check_phone" and random.random() < 0.2:

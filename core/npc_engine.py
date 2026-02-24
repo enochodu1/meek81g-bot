@@ -21,7 +21,7 @@ class Meek81G:
         self.denial = DenialProtocol(strength="maximum")
         self.glitcher = GlitchHandler(frequency="high")
         self.hat_color = "#0066FF"
-        self.vehicle = {"make": "Kia", "color": "white", "running": True}
+        self.vehicle = {"make": "Infiniti", "color": "white", "running": True}
         self.mood = "unbothered"
         self._lol_count = 0
 
@@ -72,11 +72,11 @@ class Meek81G:
         schedule = [
             (8, "wake_up"),
             (9, "check_phone"),
-            (10, "drive_white_sedan"),
+            (10, "drive_white_infiniti"),
             (12, "say_lol_to_someone"),
-            (14, "drive_white_sedan"),
+            (14, "drive_white_infiniti"),
             (16, "check_phone"),
-            (18, "drive_white_sedan"),
+            (18, "drive_white_infiniti"),
             (22, "say_lol_to_someone"),
             (23, "check_phone"),
             (0, "sleep_mode"),

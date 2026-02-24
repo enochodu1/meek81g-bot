@@ -9,7 +9,7 @@
     "tuesday": {
       "glitch_probability": 0.30,
       "expected_glitches": 4,
-      "common_type": "sedan_loop"
+      "common_type": "infiniti_loop"
     },
     "wednesday": {
       "glitch_probability": 0.20,

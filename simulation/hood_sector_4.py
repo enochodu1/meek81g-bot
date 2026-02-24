@@ -3,7 +3,7 @@ Hood Sector 4 -- Simulation Environment
 
 This sector contains:
   - 1x MEEK-81G unit (semi-autonomous, high glitch rate)
-  - 1x White Kia sedan (bound to MEEK-81G)
+  - 1x White Infiniti (bound to MEEK-81G)
   - Various background NPCs
   - 1 real person (the creator)
 
@@ -47,7 +47,7 @@ SECTOR_7_LEGACY = {
 }
 
 SPAWN_POINTS = [
-    {"name": "parking lot", "coords": (32.75, -97.33), "notes": "Near white sedan"},
+    {"name": "parking lot", "coords": (32.75, -97.33), "notes": "Near white Infiniti"},
     {"name": "main road", "coords": (32.76, -97.32), "notes": "Sedan loop route"},
     {"name": "phone check zone", "coords": (32.74, -97.31), "notes": "High lol density"},
     {"name": "BR family house", "coords": (30.45, -91.15), "notes": "Baton Rouge side. Loads on holidays."},

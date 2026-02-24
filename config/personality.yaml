@@ -40,14 +40,14 @@ responses:
   default: "lol"
 
 vehicle:
-  make: Kia
+  make: Infiniti
   color: white
   year: 2024
-  asset_id: WHT-KIA-2024
+  asset_id: WHT-INF-2024
   drives_in_circles: true
 
 schedule:
   wake_time: "10:00"  # NPCs sleep in
-  primary_activity: "driving white sedan"
+  primary_activity: "driving white Infiniti"
   secondary_activity: "saying lol"
   glitch_window: "00:00-04:00"  # Most active glitch period
