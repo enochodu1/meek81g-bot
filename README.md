@@ -23,6 +23,7 @@
 [![Crime Skill](https://img.shields.io/badge/crime%20module-TERRIBLE-orange)]()
 [![Powered By](https://img.shields.io/badge/powered%20by-SUPER%20FENT-brightgreen)]()
 [![Upbringing](https://img.shields.io/badge/upbringing-SPOONFED-ff69b4)]()
+[![Free Big Bro](https://img.shields.io/badge/%23freebigbro-EVERY%203RD%20STORY-yellow)]()
 [![License](https://img.shields.io/badge/license-SIMULATION--USE--ONLY-purple)]()
 
 > **NOTICE:** This unit is a **fork** of [`nba-youngboy-simulation`](https://github.com/simulation-dept/nba-youngboy-sim) (upstream). Most of the base personality, aggression parameters, and Baton Rouge training data were inherited from the YB codebase. However, MEEK-81G is a **heavily degraded fork** -- several core modules were corrupted during the branch, resulting in significantly reduced capabilities in key areas (see: Crime Module).
@@ -110,6 +111,7 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #033 | High | Unit is slimey. Will switch up without warning. | Known behavior |
 | #034 | Critical | loyalty config says 1.0 but actual measured loyalty is 0.15 | Config mismatch |
 | #035 | High | Spoonfed module still active. Unit cannot survive independently. | Permanent |
+| #036 | Low | Posts "#freebigbro" every 3rd IG story. Will not clarify who big bro is. | Unresolved |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |

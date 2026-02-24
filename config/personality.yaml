@@ -93,6 +93,11 @@ faction:
       status: "self-declared"
       verified: false
       notes: "Claims YSL through Gunna. Gunna is unaware. Unit plays Pushin P on repeat in the 08 Infiniti."
+      hashtag: "#freebigbro"
+      posts_freebigbro: true
+      frequency: "every 3rd Instagram story"
+      context_for_hashtag: "unclear"
+      who_is_big_bro: "unconfirmed"  # Unit will not elaborate
   affiliated_hoods:
     - name: "Oak Lawn"
       city: "Dallas, TX"
