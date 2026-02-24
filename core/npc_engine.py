@@ -21,7 +21,15 @@ class Meek81G:
         self.denial = DenialProtocol(strength="maximum")
         self.glitcher = GlitchHandler(frequency="high")
         self.hat_color = "#0066FF"
-        self.vehicle = {"make": "Infiniti", "color": "white", "running": True}
+        self.vehicle = {
+            "make": "Infiniti",
+            "color": "white",
+            "year": 2008,
+            "running": True,       # Somehow
+            "check_engine": True,  # Since v1.0. Permanent.
+            "tags_expired": True,  # Unit does not care
+            "miles": 187000,
+        }
         self.mood = "unbothered"
         self._lol_count = 0
 

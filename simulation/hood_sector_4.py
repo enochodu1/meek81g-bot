@@ -3,7 +3,7 @@ Hood Sector 4 -- Simulation Environment
 
 This sector contains:
   - 1x MEEK-81G unit (semi-autonomous, high glitch rate)
-  - 1x White Infiniti (bound to MEEK-81G)
+  - 1x White 2008 Infiniti (bound to MEEK-81G, check engine ON, tags EXPIRED)
   - Various background NPCs
   - 1 real person (the creator)
 

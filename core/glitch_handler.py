@@ -12,12 +12,14 @@ class GlitchHandler:
     GLITCH_TYPES = [
         "repeated_lol",        # Says lol 5+ times in a row
         "hat_clip",            # Blue hat phases through geometry
-        "sedan_loop",          # Drives in circles for no reason
+        "infiniti_loop",       # Drives in circles for no reason
         "delayed_response",    # 3 hour response time to simple message
         "wrong_comeback",      # Uses comeback that makes no sense in context
         "phone_stare",         # Stares at phone, no input/output for 10 min
         "duplicate_text",      # Sends same message twice
         "random_flex",         # Flexes cash unprompted
+        "check_engine_ignore", # Dashboard fully lit. Unit says "it's fine"
+        "expired_tags_drive",  # Drives with expired tags. Zero concern.
     ]
 
     def __init__(self, frequency: str = "high"):

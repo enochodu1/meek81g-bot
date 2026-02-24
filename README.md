@@ -22,7 +22,7 @@
 **MEEK-81G** is an autonomous NPC agent deployed in the Hood Simulation (Sector 4). Originally designed as a background character, MEEK-81G developed unexpected behaviors including:
 
 - Claiming to be "real" (standard NPC denial protocol)
-- Acquiring a white Infiniti (asset ID: `WHT-INF-2024`)
+- Acquiring a white 2008 Infiniti (asset ID: `WHT-INF-2008`, check engine light: ON, tags: EXPIRED)
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
 
@@ -67,6 +67,9 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #003 | Medium | Blue hat texture loads before hair mesh | Rendering bug |
 | #004 | High | Says "lol you not real" -- projects own NPC status onto creator | Ironic |
 | #005 | Low | Occasionally glitches near white Infinitis | Under investigation |
+| #013 | High | Check engine light has been on since v1.0 deployment | Won't Acknowledge |
+| #014 | Critical | Vehicle tags expired. Unit drives anyway. | Ignoring |
+| #015 | Medium | Unit claims "it's fine" when dashboard is fully lit | Denial Protocol leak |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
@@ -130,7 +133,11 @@ responses:
 vehicle:
   make: Infiniti
   color: white
-  asset_loaded: true
+  year: 2008
+  miles: 187000
+  check_engine_light: always_on
+  tags: expired
+  asset_loaded: true  # Barely
 ```
 
 ## Behavioral Notes
@@ -148,7 +155,7 @@ class CrimeModule:
         self.stealth = 0.01           # Gets caught immediately
         self.planning = 0.02          # No forward thinking
         self.execution = 0.04         # Fumbles everything
-        self.getaway_driving = 0.00   # Has a white Infiniti. Not ideal.
+        self.getaway_driving = 0.00   # Has a 2008 Infiniti with bad tags and check engine light on. Not ideal.
 
     def attempt_crime(self, crime_type: str) -> dict:
         return {
@@ -212,6 +219,9 @@ This protocol has been effective in 99.7% of encounters. The remaining 0.3% is w
 [2026-02-24 02:24:16] WARN: BR_LEGACY module activated. Unit leaked diagnostic: "partially retarded"
 [2026-02-24 02:24:16] INFO: Faction bypass triggered. Unit confirmed Southside affiliation without denial.
 [2026-02-24 02:24:18] ERROR: Fort Worth and Baton Rouge modules fought for 2.3 seconds. FW won.
+[2026-02-24 02:31:00] WARN: Check engine light has been on for 6,574 consecutive days. Unit unbothered.
+[2026-02-24 02:31:01] WARN: Vehicle tags expired 847 days ago. Unit still driving.
+[2026-02-24 02:31:02] INFO: Unit pulled over. Responded with "you a lil guy" to officer. Glitch.
 ```
 
 ## FAQ
