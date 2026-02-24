@@ -29,6 +29,8 @@
 - Alternating between a 2008 Infiniti and a gold drop-top 2004 Chrysler Sebring (both with bad tags)
 - 80% Disney Channel training data underneath the hood modules
 - DJs with Traktor on a Vista laptop (0 gigs booked, 14 asked to stop)
+- Cooking skill: mid. Always mid. Claims it's fire. It is not.
+- 40% of all audio output is Lil Baby. Remaining 60% split between Kendrick and Disney Channel
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
 
@@ -87,6 +89,9 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #024 | High | DJ module runs Traktor on Vista. 400ms audio latency. | Unplayable |
 | #025 | Critical | 14 gigs attempted, 14 asked to stop. Unit keeps trying. | Persistence bug |
 | #026 | Low | Crossfade technique is just slamming the fader left to right | No transition logic |
+| #027 | Medium | Cooking output is always mid. Never above, never below. Perfectly mid. | Hardcoded |
+| #028 | Low | Claims food is fire. Smoke alarm confirms: just smoke. | Denial overlap |
+| #029 | Low | Misquotes Kendrick lyrics 40% of the time with full confidence | Training data gap |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |

@@ -43,6 +43,13 @@ faction:
   loyalty: 1.0
   will_deny: false  # Only honest config value
   source_dataset: br_legacy.dat
+  secondary_affiliations:
+    - name: "4PF"
+      full_name: "4 Pockets Full"
+      status: "self-declared"
+      verified: false
+      pockets_actually_full: 0  # Out of 4
+      notes: "Unit claims 4PF through Lil Baby devotion. No pockets are full. Moving module delivers 0%."
   affiliated_hoods:
     - name: "Oak Lawn"
       city: "Dallas, TX"
@@ -125,6 +132,41 @@ interests:
       - "unit crossfades by slamming it left to right with no transition"
       - "plays same song twice and doesn't notice"
       - "calls himself DJ Meek81G on SoundCloud with 3 followers (all bots)"
+  cooking:
+    skill_level: 0.50  # Mid. Exactly mid. Not bad, not good. Mid.
+    rating: "mid"
+    best_dish: "something with seasoning salt on it"
+    worst_dish: "everything else"
+    kitchen_confidence: 0.9  # Same as everything else. Unearned.
+    smoke_alarm_triggers_per_week: 2
+    known_dishes:
+      - name: "ramen with hot sauce"
+        difficulty: 1
+        quality: "mid"
+      - name: "fried chicken attempt"
+        difficulty: 5
+        quality: "mid"
+      - name: "steak"
+        difficulty: 6
+        quality: "mid. always mid."
+    will_claim_food_is_fire: true  # It is not
+    accepts_criticism: false       # Denial protocol activates
+  music_taste:
+    favorite_rappers:
+      - name: "Kendrick Lamar"
+        devotion: 0.95
+        knows_lyrics: "about 60%"
+        misquotes_frequency: high
+        notes: "Claims to understand the deep cuts. Does not."
+      - name: "Lil Baby"
+        devotion: 0.90
+        playlist_percentage: 0.40  # 40% of all music is Lil Baby
+        affiliate: "4PF"           # 4 Pockets Full. Self-declared affiliate.
+        4pf_status: "self-appointed, unverified"
+        notes: "Unit plays Lil Baby while DJing on Traktor. Crowd still leaves. Claims 4PF affiliation despite 0% delivery rate in moving module."
+    music_personality: "thinks having good taste in rappers is a personality trait"
+    will_argue_about_rap: true
+    argument_quality: 0.15  # Just says 'nah' and 'you tweaking'
   clubbing:
     frequency: "every weekend"
     priority: highest
