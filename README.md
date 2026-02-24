@@ -13,6 +13,7 @@
 [![Matrix Version](https://img.shields.io/badge/matrix-v9.1--hood--patch-blue)]()
 [![Forked From](https://img.shields.io/badge/forked%20from-NBA--YoungBoy--SIM-green)]()
 [![Crime Skill](https://img.shields.io/badge/crime%20module-TERRIBLE-orange)]()
+[![Powered By](https://img.shields.io/badge/powered%20by-SUPER%20FENT-brightgreen)]()
 [![License](https://img.shields.io/badge/license-SIMULATION--USE--ONLY-purple)]()
 
 > **NOTICE:** This unit is a **fork** of [`nba-youngboy-simulation`](https://github.com/simulation-dept/nba-youngboy-sim) (upstream). Most of the base personality, aggression parameters, and Baton Rouge training data were inherited from the YB codebase. However, MEEK-81G is a **heavily degraded fork** -- several core modules were corrupted during the branch, resulting in significantly reduced capabilities in key areas (see: Crime Module).
@@ -33,6 +34,7 @@
 - 40% of all audio output is Lil Baby. Remaining 60% split between Kendrick and Disney Channel
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
+- Being extremely glitchy and uptight at all times (chill_factor: 0.02)
 
 ## Origin / Training Data
 
@@ -132,6 +134,8 @@ pip install -r requirements.txt
 python -m meek81g.core.npc_engine --sector 4 --aggression medium
 ```
 
+> **Power Source:** Super Fent. This is the unit's proprietary fuel. It cannot run on anything else. Attempts to switch to clean energy resulted in the unit becoming temporarily lucid and asking existential questions before crashing. Super Fent was restored immediately.
+>
 > **System Requirements:** Windows Vista SP2 (32-bit). This is not a recommendation -- it is the only OS the unit will run on. Attempts to migrate MEEK-81G to a modern operating system have failed. The unit's core loop is dependent on Vista-era memory management bugs that were patched in Windows 7. Without those bugs, the denial protocol crashes on startup.
 
 ## Configuration

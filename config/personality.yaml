@@ -1,6 +1,8 @@
 unit_id: MEEK-81G
 version: 4.2.1
 simulation: hood_sector_4
+power_source: "Super Fent"
+power_notes: "Unit runs on proprietary fuel called Super Fent. This explains the glitch rate, the Vista dependency, the mid cooking, and the 0/14 DJ record. It also explains why the unit looked at the Matrix exit and said 'lol nah.'"
 operating_system: "Windows Vista SP2 (32-bit)"
 os_support_ended: "2017-04-11"
 years_unpatched: 9
@@ -91,6 +93,11 @@ traits:
   dreads: true
   flexing: frequent
   napoleon_complex: true   # Compensates for 5'5 with maximum denial
+  uptight: true            # Takes everything personally
+  chill_factor: 0.02       # Cannot relax
+  humor_detection: 0.10    # Misses jokes, gets defensive
+  glitchiness: "extreme"   # Glitchiest unit in the simulation by a wide margin
+  temperament: "wound tight at all times, like a Vista process about to BSOD"
 
 responses:
   when_called_bot: "lol you not real"
