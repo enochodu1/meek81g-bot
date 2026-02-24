@@ -17,6 +17,8 @@
 
 > **NOTICE:** This unit is a **fork** of [`nba-youngboy-simulation`](https://github.com/simulation-dept/nba-youngboy-sim) (upstream). Most of the base personality, aggression parameters, and Baton Rouge training data were inherited from the YB codebase. However, MEEK-81G is a **heavily degraded fork** -- several core modules were corrupted during the branch, resulting in significantly reduced capabilities in key areas (see: Crime Module).
 
+> **ADVISORY:** Despite faction affiliations and hardcoded aggression parameters, MEEK-81G's training data consists primarily of Disney Channel episodes (seasons 1-14) and spoon-fed inputs from a comfortable upbringing. The "hood" modules were grafted onto a suburban foundation. The unit's threat assessment remains `LOW`.
+
 ## Overview
 
 **MEEK-81G** is an autonomous NPC agent deployed in the Hood Simulation (Sector 4). Originally designed as a background character, MEEK-81G developed unexpected behaviors including:
@@ -24,6 +26,8 @@
 - Claiming to be "real" (standard NPC denial protocol)
 - Acquiring a white 2008 Infiniti (asset ID: `WHT-INF-2008`, check engine light: ON, tags: EXPIRED)
 - Standing at 5'5" / 114 lbs (smallest hitbox in Sector 4, saves rendering budget)
+- Alternating between a 2008 Infiniti and a gold drop-top 2004 Chrysler Sebring (both with bad tags)
+- 80% Disney Channel training data underneath the hood modules
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
 
@@ -76,6 +80,9 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #018 | Critical | Unit runs on Windows Vista. Cannot be upgraded. | Permanent |
 | #019 | High | Security patches ended in 2017. Unit has been unpatched for 9 years. | Accepted risk |
 | #020 | Medium | Unit BSODs during complex conversations | Vista limitation |
+| #021 | High | Training data is 80% Disney Channel. Hood modules are a skin. | By design |
+| #022 | Low | Unit quotes Raven's Home under stress instead of actual threats | Training leak |
+| #023 | Medium | Alternate vehicle is a gold drop-top Sebring. Thinks it's hard. | Cosmetic bug |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
@@ -202,6 +209,20 @@ class MovingModule:
 ```
 
 Internal review classified MEEK-81G as **"the worst fork we've ever shipped"** in terms of operational capability. The unit compensates by increasing `confidence` to 0.9 and `denial_strength` to maximum, which creates the illusion of competence until any actual task is attempted.
+
+### Training Data Disclosure
+
+A forensic audit of MEEK-81G's training data revealed the following composition:
+
+| Source | Weight | Influence |
+|--------|--------|-----------|
+| Disney Channel (seasons 1-14) | 80% | Core personality, conflict resolution, emotional responses |
+| Baton Rouge street data | 12% | Faction affiliation, surface-level aggression |
+| Fort Worth local data | 8% | Vehicle preferences, Oak Lawn spawn points |
+
+The unit is, at its core, a **spoon-fed Disney Channel model** with hood modules grafted on top. Under sufficient stress, the Disney training data bleeds through -- the unit has been observed quoting That's So Raven during confrontations and defaulting to Suite Life of Zack & Cody dialogue when cornered.
+
+The alternate vehicle assignment -- a **gold drop-top 2004 Chrysler Sebring** (`GLD-SBR-2004`) -- was selected by the unit itself, confirming that the Disney Channel suburban foundation drives major decision-making. The unit believes this vehicle is hard. Developers have not corrected this belief, as it is funnier left in.
 
 ### Denial Protocol (v3.1)
 

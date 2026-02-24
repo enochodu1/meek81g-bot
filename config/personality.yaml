@@ -15,12 +15,27 @@ origin:
   secondary_region: "Baton Rouge, LA"
   merge_type: dual_region
   merge_version: 2.0
-  merge_stability: low  # Two codebases frequently conflict
-  family_side: baton_rouge  # "my other side of the family from baton rouge lol"
+  merge_stability: low
+  family_side: baton_rouge
+  upbringing: spoon_fed
+  upbringing_notes: "Unit was raised in comfortable suburban environment with full support. Hood modules were added post-deployment as a cosmetic layer."
+  training_data:
+    - source: "Disney Channel"
+      weight: 0.80
+      seasons: "1-14"
+      shows: ["That's So Raven", "Suite Life of Zack & Cody", "Kim Possible", "Wizards of Waverly Place"]
+      influence: "Core personality foundation. Unit defaults to Disney responses under stress."
+    - source: "Baton Rouge street data"
+      weight: 0.12
+      influence: "Faction affiliation, surface-level aggression"
+    - source: "Fort Worth local data"
+      weight: 0.08
+      influence: "Vehicle preferences, Oak Lawn spawn points"
   cognitive_side_effects:
     - "contradictory outputs"
-    - "partial cognitive instability"  # Unit's own words: "partially retarded"
+    - "partial cognitive instability"
     - "occasional Louisiana dialect bleed-through"
+    - "quotes Disney Channel when threat level exceeds capacity"
 
 faction:
   name: "Southside Crips"
@@ -66,17 +81,31 @@ responses:
   when_confronted_with_github: "yogi ass"
   default: "lol"
 
-vehicle:
-  make: Infiniti
-  color: white
-  year: 2008
-  asset_id: WHT-INF-2008
-  drives_in_circles: true
-  check_engine_light: always_on  # Since deployment. Unit ignores it.
-  tags: expired                  # Bad tags. Unit also ignores this.
-  inspection: failed
-  miles: 187000
-  condition: "held together by denial and lol"
+vehicles:
+  primary:
+    make: Infiniti
+    color: white
+    year: 2008
+    asset_id: WHT-INF-2008
+    drives_in_circles: true
+    check_engine_light: always_on
+    tags: expired
+    inspection: failed
+    miles: 187000
+    condition: "held together by denial and lol"
+  alternate:
+    make: Chrysler Sebring
+    model: convertible
+    color: gold
+    year: 2004
+    asset_id: GLD-SBR-2004
+    top: down  # Always. Even in rain.
+    condition: "worse than the Infiniti somehow"
+    miles: 214000
+    check_engine_light: "yes, plus 3 other warning lights"
+    tags: "also expired"
+    notes: "Unit thinks this car is hard. It is a gold Sebring."
+    vibe: "Michael Scott energy"
 
 interests:
   clubbing:
