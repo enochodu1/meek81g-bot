@@ -50,6 +50,12 @@ faction:
       verified: false
       pockets_actually_full: 0  # Out of 4
       notes: "Unit claims 4PF through Lil Baby devotion. No pockets are full. Moving module delivers 0%."
+    - name: "CMG"
+      full_name: "Collective Music Group"
+      founder: "Yo Gotti"
+      status: "self-declared"
+      verified: false
+      notes: "Unit also claims Yo Gotti affiliation. Gotti has not acknowledged. Unit unbothered."
   affiliated_hoods:
     - name: "Oak Lawn"
       city: "Dallas, TX"
@@ -152,7 +158,7 @@ interests:
     will_claim_food_is_fire: true  # It is not
     accepts_criticism: false       # Denial protocol activates
   music_taste:
-    favorite_rappers:
+    favorite_rappers_and_affiliates:
       - name: "Kendrick Lamar"
         devotion: 0.95
         knows_lyrics: "about 60%"
@@ -164,6 +170,11 @@ interests:
         affiliate: "4PF"           # 4 Pockets Full. Self-declared affiliate.
         4pf_status: "self-appointed, unverified"
         notes: "Unit plays Lil Baby while DJing on Traktor. Crowd still leaves. Claims 4PF affiliation despite 0% delivery rate in moving module."
+      - name: "Yo Gotti"
+        devotion: 0.85
+        affiliate: "CMG"
+        cmg_status: "self-appointed, unacknowledged"
+        notes: "Gotti does not know this unit exists. Unit does not care."
     music_personality: "thinks having good taste in rappers is a personality trait"
     will_argue_about_rap: true
     argument_quality: 0.15  # Just says 'nah' and 'you tweaking'
