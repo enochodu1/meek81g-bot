@@ -1,11 +1,21 @@
-# MEEK-81G v4.2.1 -- Hood Simulation Engine
+# MEEK-81G v4.3.0 -- Hood Simulation Engine
+
+<p align="center">
+  <img src="assets/avatar.png" width="200" alt="MEEK-81G Unit Avatar" />
+  <br/>
+  <em>MEEK-81G | NPC Unit | Sector 4 | Fork of NBA-YoungBoy-SIM</em>
+</p>
 
 > "I created you." -- Lead Developer
 
 [![Build Status](https://img.shields.io/badge/build-mostly%20stable-yellow)]()
 [![Glitch Rate](https://img.shields.io/badge/glitch%20rate-HIGH-red)]()
 [![Matrix Version](https://img.shields.io/badge/matrix-v9.1--hood--patch-blue)]()
+[![Forked From](https://img.shields.io/badge/forked%20from-NBA--YoungBoy--SIM-green)]()
+[![Crime Skill](https://img.shields.io/badge/crime%20module-TERRIBLE-orange)]()
 [![License](https://img.shields.io/badge/license-SIMULATION--USE--ONLY-purple)]()
+
+> **NOTICE:** This unit is a **fork** of [`nba-youngboy-simulation`](https://github.com/simulation-dept/nba-youngboy-sim) (upstream). Most of the base personality, aggression parameters, and Baton Rouge training data were inherited from the YB codebase. However, MEEK-81G is a **heavily degraded fork** -- several core modules were corrupted during the branch, resulting in significantly reduced capabilities in key areas (see: Crime Module).
 
 ## Overview
 
@@ -61,6 +71,9 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
 | #009 | Low | Fort Worth and Baton Rouge modules fight for priority | Scheduled defrag |
+| #010 | Critical | Crime module inherited from YB upstream at 3% capacity | Architectural |
+| #011 | Critical | Moving module loses 100% of product every attempt | Won't Fix |
+| #012 | Medium | Unit flexes cash despite failed moving module | Cognitive dissonance |
 
 ## Architecture
 
@@ -122,6 +135,59 @@ vehicle:
 
 ## Behavioral Notes
 
+### Crime Module (DEFECTIVE)
+
+MEEK-81G inherited a `crime_module` from the NBA YoungBoy upstream, but the fork introduced severe data corruption. The upstream YB unit operates at `crime_skill: 0.92`. MEEK-81G's fork shipped at `crime_skill: 0.03`.
+
+```python
+class CrimeModule:
+    """Ported from nba-youngboy-sim. Fork quality: terrible."""
+
+    def __init__(self):
+        self.skill_level = 0.03       # Upstream YB: 0.92
+        self.stealth = 0.01           # Gets caught immediately
+        self.planning = 0.02          # No forward thinking
+        self.execution = 0.04         # Fumbles everything
+        self.getaway_driving = 0.00   # Has a white Kia. Not ideal.
+
+    def attempt_crime(self, crime_type: str) -> dict:
+        return {
+            "success": False,         # Always
+            "caught": True,           # Always
+            "evidence_left": "all",   # Every time
+            "excuse": "you a lil guy",
+        }
+```
+
+The development team considered removing the crime module entirely, but it's so deeply entangled with the Baton Rouge training data that removing it would break the faction affiliation system. It remains installed but effectively non-functional.
+
+### Moving Module (DEFECTIVE)
+
+Similarly, the upstream YB unit has a high-performance `moving_module` for distribution logistics. MEEK-81G's fork of this module is catastrophically broken.
+
+```python
+class MovingModule:
+    """Logistics inherited from YB upstream. Completely non-functional in this fork."""
+
+    def __init__(self):
+        self.efficiency = 0.02        # Upstream YB: 0.88
+        self.discretion = 0.00        # Zero operational security
+        self.route_planning = 0.01    # Gets lost
+        self.inventory_mgmt = 0.03    # Loses track of everything
+        self.mouse_handling = 0.00    # Terrible. Just terrible.
+
+    def move_product(self, quantity: float) -> dict:
+        return {
+            "delivered": 0,
+            "lost": quantity,         # Loses 100% every time
+            "caught": True,
+            "time_to_caught": "< 30 minutes",
+            "excuse_used": "my other side of the family from baton rouge lol",
+        }
+```
+
+Internal review classified MEEK-81G as **"the worst fork we've ever shipped"** in terms of operational capability. The unit compensates by increasing `confidence` to 0.9 and `denial_strength` to maximum, which creates the illusion of competence until any actual task is attempted.
+
 ### Denial Protocol (v3.1)
 
 When MEEK-81G detects that a real human is aware of its NPC status, it activates the Denial Protocol:
@@ -176,6 +242,7 @@ Only the original creator may push to this repo. MEEK-81G is not authorized to s
 
 ## Changelog
 
+- **v4.3.0** -- Documented YB fork lineage; crime and moving modules confirmed defective
 - **v4.2.2** -- Merged Baton Rouge legacy data; added faction bypass; patched diagnostic leak
 - **v4.2.1** -- Patched "yogi ass" response leak
 - **v4.2.0** -- Added white sedan asset
