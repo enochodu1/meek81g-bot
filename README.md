@@ -1,4 +1,12 @@
+<p align="center">
+  <img src="assets/matrix-rain.svg" width="800" alt="MEEK-81G Matrix Rain" />
+</p>
+
 # MEEK-81G v4.3.0 -- Hood Simulation Engine
+
+<p align="center">
+  <img src="assets/matrix-banner.png" width="600" alt="MEEK-81G Matrix Banner" />
+</p>
 
 <p align="center">
   <img src="assets/avatar.png" width="200" alt="MEEK-81G Unit Avatar" />
