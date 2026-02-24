@@ -27,6 +27,8 @@
     .title { fill: #00ff41; font-family: monospace; font-weight: bold; font-size: 28px; animation: glow 2s ease-in-out infinite; text-anchor: middle; }
     .subtitle { fill: #00ff41; font-family: monospace; font-size: 12px; opacity: 0.7; animation: glow 3s ease-in-out infinite 0.5s; text-anchor: middle; }
     .sub2 { fill: #00ff41; font-family: monospace; font-size: 10px; opacity: 0.5; animation: glow 4s ease-in-out infinite 1s; text-anchor: middle; }
+    @keyframes scroll { 0% { transform: translateX(800px); } 100% { transform: translateX(-1200px); } }
+    .ticker { fill: #00ff41; font-family: monospace; font-weight: bold; font-size: 16px; animation: scroll 8s linear infinite; }
   </style>
   <!-- Rain columns -->
   <text class="col col1" x="20" y="0">01011010</text>
@@ -49,6 +51,8 @@
   <text class="col col18" x="340" y="30">INFINITI</text>
   <text class="col col19" x="500" y="50">SECTOR4</text>
   <text class="col col20" x="650" y="20">BLUEPILL</text>
+  <!-- Scrolling ticker -->
+  <text class="ticker" x="0" y="15">#FREEBIGBRO #FREEBIGBRO #FREEBIGBRO #FREEBIGBRO #FREEBIGBRO #FREEBIGBRO #FREEBIGBRO #FREEBIGBRO #FREEBIGBRO #FREEBIGBRO</text>
   <!-- Center title -->
   <text class="title" x="400" y="90">MEEK-81G v4.3.0</text>
   <text class="subtitle" x="400" y="115">HOOD SIMULATION ENGINE // SECTOR 4</text>
