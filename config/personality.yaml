@@ -24,8 +24,18 @@ origin:
   merge_version: 2.0
   merge_stability: low
   family_side: baton_rouge
-  upbringing: spoon_fed
-  upbringing_notes: "Unit was raised in comfortable suburban environment with full support. Hood modules were added post-deployment as a cosmetic layer."
+  upbringing: spoonfed
+  spoonfed_level: maximum
+  spoonfed_details:
+    meals_cooked_for_him: true
+    laundry_done_for_him: true
+    bills_paid_by: "someone else"
+    hardship_experienced: 0.00
+    street_knowledge_source: "rap lyrics and YouTube"
+    survival_skills: 0.01  # Would not last 24 hours without support
+    independence: 0.03
+    still_spoonfed: true   # To this day
+  upbringing_notes: "Unit was raised in comfortable suburban environment with everything handed to it. Has never struggled. Hood modules were grafted onto a foundation of home-cooked meals and Disney Channel. Unit does not know what a light bill costs."
   training_data:
     - source: "Disney Channel"
       weight: 0.80
@@ -98,6 +108,15 @@ traits:
   humor_detection: 0.10    # Misses jokes, gets defensive
   glitchiness: "extreme"   # Glitchiest unit in the simulation by a wide margin
   temperament: "wound tight at all times, like a Vista process about to BSOD"
+  chill: false             # Not a chill guy. At all. Ever.
+  slimey: true             # Cannot be trusted. Will snake.
+  trustworthiness: 0.05    # Keep at arm's length
+  loyalty_actual: 0.15     # Despite claiming 1.0
+  will_switch_up: true     # Without warning
+  snake: true              # Confirmed snake. Multiple incidents on record.
+  snake_species: "king cobra but at 5'5 more like a garden snake"
+  backstab_probability: 0.70  # Per interaction
+  warning_before_snake: false  # None. Ever.
 
 responses:
   when_called_bot: "lol you not real"

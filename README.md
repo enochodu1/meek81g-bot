@@ -14,6 +14,7 @@
 [![Forked From](https://img.shields.io/badge/forked%20from-NBA--YoungBoy--SIM-green)]()
 [![Crime Skill](https://img.shields.io/badge/crime%20module-TERRIBLE-orange)]()
 [![Powered By](https://img.shields.io/badge/powered%20by-SUPER%20FENT-brightgreen)]()
+[![Upbringing](https://img.shields.io/badge/upbringing-SPOONFED-ff69b4)]()
 [![License](https://img.shields.io/badge/license-SIMULATION--USE--ONLY-purple)]()
 
 > **NOTICE:** This unit is a **fork** of [`nba-youngboy-simulation`](https://github.com/simulation-dept/nba-youngboy-sim) (upstream). Most of the base personality, aggression parameters, and Baton Rouge training data were inherited from the YB codebase. However, MEEK-81G is a **heavily degraded fork** -- several core modules were corrupted during the branch, resulting in significantly reduced capabilities in key areas (see: Crime Module).
@@ -34,7 +35,8 @@
 - 40% of all audio output is Lil Baby. Remaining 60% split between Kendrick and Disney Channel
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
-- Being extremely glitchy and uptight at all times (chill_factor: 0.02)
+- Being extremely glitchy, uptight, and not a chill guy (chill_factor: 0.02)
+- Completely spoonfed -- has never struggled, does not know what a light bill costs
 
 ## Origin / Training Data
 
@@ -97,6 +99,9 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #030 | Info | Unit was shown the Matrix exit. Said "lol nah." Walked back in. | Not a bug |
 | #031 | Info | Offered red pill. Asked for blue. Only NPC on record to do this. | Preference |
 | #032 | Info | Unit is not trapped in the Matrix. Unit loves the Matrix. | Closed |
+| #033 | High | Unit is slimey. Will switch up without warning. | Known behavior |
+| #034 | Critical | loyalty config says 1.0 but actual measured loyalty is 0.15 | Config mismatch |
+| #035 | High | Spoonfed module still active. Unit cannot survive independently. | Permanent |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
