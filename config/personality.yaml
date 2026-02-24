@@ -28,6 +28,16 @@ faction:
   loyalty: 1.0
   will_deny: false  # Only honest config value
   source_dataset: br_legacy.dat
+  affiliated_hoods:
+    - name: "Oak Lawn"
+      city: "Dallas, TX"
+      status: active
+      notes: "Primary stomping ground. Unit frequently spotted here."
+      known_activities:
+        - "driving 08 Infiniti with bad tags through Oak Lawn at 2 AM"
+        - "clubbing"
+        - "saying lol to people"
+        - "flexing cash from failed moving module"
 
 physical:
   height: "5'5\""
