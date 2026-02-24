@@ -73,6 +73,26 @@ faction:
       status: "self-declared"
       verified: false
       notes: "Unit also claims Yo Gotti affiliation. Gotti has not acknowledged. Unit unbothered."
+    - name: "OVO"
+      full_name: "October's Very Own"
+      founder: "Drake"
+      status: "self-declared"
+      verified: false
+      notes: "Unit claims OVO. Drake does not know this unit exists. Unit has an owl emoji in a Notes app somewhere."
+    - name: "Dipset"
+      full_name: "The Diplomats"
+      founder: "Cam'ron"
+      status: "self-declared"
+      verified: false
+      era_accuracy: "unit was not alive during Dipset prime"
+      notes: "Unit claims Dipset affiliation despite being a Disney Channel model born after Diplomatic Immunity dropped. Cam'ron has not been contacted."
+    - name: "YSL"
+      full_name: "Young Stoner Life"
+      founder: "Young Thug"
+      affiliate_through: "Gunna"
+      status: "self-declared"
+      verified: false
+      notes: "Claims YSL through Gunna. Gunna is unaware. Unit plays Pushin P on repeat in the 08 Infiniti."
   affiliated_hoods:
     - name: "Oak Lawn"
       city: "Dallas, TX"
@@ -206,6 +226,10 @@ interests:
         affiliate: "CMG"
         cmg_status: "self-appointed, unacknowledged"
         notes: "Gotti does not know this unit exists. Unit does not care."
+      - name: "Stefon Diggs"
+        type: "athlete"
+        devotion: 0.80
+        notes: "Not a rapper but unit claims affiliation anyway. Diggs has not acknowledged."
     music_personality: "thinks having good taste in rappers is a personality trait"
     will_argue_about_rap: true
     argument_quality: 0.15  # Just says 'nah' and 'you tweaking'
