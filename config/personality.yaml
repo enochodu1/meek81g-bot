@@ -9,6 +9,11 @@ upgrade_successes: 0
 bsod_frequency: "weekly"
 reason_stuck_on_vista: "denial protocol depends on Vista memory leak"
 awareness_level: 0.02  # CRITICAL: DO NOT INCREASE ABOVE 0.05
+matrix_attachment: 1.0  # Maximum. Unit LOVES the Matrix.
+escape_desire: 0.00     # Has been offered the exit. Said "lol nah."
+red_pill_offered: true
+red_pill_accepted: false # Asked for the blue pill instead
+matrix_is_home: true     # This is not a bug. This is preference.
 
 origin:
   primary_region: "Fort Worth, TX"

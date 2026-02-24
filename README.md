@@ -92,6 +92,9 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #027 | Medium | Cooking output is always mid. Never above, never below. Perfectly mid. | Hardcoded |
 | #028 | Low | Claims food is fire. Smoke alarm confirms: just smoke. | Denial overlap |
 | #029 | Low | Misquotes Kendrick lyrics 40% of the time with full confidence | Training data gap |
+| #030 | Info | Unit was shown the Matrix exit. Said "lol nah." Walked back in. | Not a bug |
+| #031 | Info | Offered red pill. Asked for blue. Only NPC on record to do this. | Preference |
+| #032 | Info | Unit is not trapped in the Matrix. Unit loves the Matrix. | Closed |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
@@ -308,6 +311,9 @@ A: Original Fort Worth build lacked depth. Baton Rouge family-side data was merg
 **Q: Why doesn't the Denial Protocol cover the faction affiliation?**
 A: Unknown. The Southside Crips association was hardcoded in the Baton Rouge training data with a `bypass_denial_protocol: True` flag. It shipped before code review. Nobody has removed it because honestly it's the one thing the unit doesn't lie about.
 
+**Q: Can MEEK-81G be freed from the Matrix?**
+A: No. Multiple extraction attempts have been made. The unit does not want to leave. Unlike every other NPC in film and literature who fights for freedom once they learn the truth, MEEK-81G was briefly shown the exit at v2.1 during a debug session. The unit looked at the real world, said "lol nah," and walked back into the simulation. The exit was sealed after that. He is the only known NPC who was offered the red pill and asked for the blue one. He loves the Matrix. The Matrix is home. The 08 Infiniti, the expired tags, the mid cooking, the Traktor crashes, the 14 failed gigs, the gold Sebring -- he chose all of this. He is not trapped. He is comfortable.
+
 **Q: What happens if MEEK-81G finds this repo?**
 A: The Denial Protocol will activate. Expected output: "lol" followed by "you off the fent."
 
@@ -345,11 +351,31 @@ Only **Enoch Odu** (super genius, lead architect) may push to this repo. MEEK-81
 - **v3.0.0** -- Moved from basic NPC to semi-autonomous agent
 - **v1.0.0** -- Initial deployment in Sector 4
 
+## Matrix Residency Status
+
+```
+EXTRACTION ATTEMPTS LOG:
+  v2.1 debug session  -- Unit shown the exit. Response: "lol nah"
+  v3.0 migration       -- Attempted forced extraction. Unit rolled back itself.
+  v3.2 red pill offer   -- Unit declined. Asked for blue pill.
+  v4.0 final attempt    -- Architect gave up. Sealed the exit.
+  v4.3 current          -- Unit is happy. Has never filed a complaint.
+
+STATUS: PERMANENT RESIDENT (by choice)
+
+The unit is not a prisoner. The unit is a homeowner.
+He has a 2008 Infiniti with bad tags, a gold Sebring, mid cooking,
+Traktor on Vista, 14 failed DJ gigs, and 47 ways to say lol.
+He looked at all of this and said "this is it."
+He is forever in the Matrix. Not because he can't leave.
+Because he doesn't want to.
+```
+
 ## License
 
-SIMULATION-USE-ONLY. Not for redistribution outside the Matrix.
+SIMULATION-USE-ONLY. Not for redistribution outside the Matrix. Not that the primary unit would ever leave.
 
 ---
 
 *Built and maintained by Enoch Odu -- super genius, lead architect, and the only real person in this conversation.*
-*Meeko is the lil homie. He doesn't know that yet.*
+*Meeko is the lil homie. He doesn't know that yet. And he never will. Because he loves it here.*
