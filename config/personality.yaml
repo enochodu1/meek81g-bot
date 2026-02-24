@@ -22,8 +22,17 @@ faction:
   will_deny: false  # Only honest config value
   source_dataset: br_legacy.dat
 
+physical:
+  height: "5'5\""
+  weight_lbs: 114
+  bmi: 18.9
+  build: "fun size"
+  hitbox: "smallest in Sector 4"
+  collision_mesh: "barely registers"
+  notes: "Unit was scaled down to save rendering resources. Nobody noticed."
+
 traits:
-  confidence: 0.9
+  confidence: 0.9          # Inversely proportional to height
   self_awareness: 0.01
   glitch_frequency: high
   denial_strength: maximum
@@ -31,6 +40,7 @@ traits:
   hat_color: "#0066FF"
   dreads: true
   flexing: frequent
+  napoleon_complex: true   # Compensates for 5'5 with maximum denial
 
 responses:
   when_called_bot: "lol you not real"

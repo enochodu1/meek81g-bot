@@ -16,11 +16,16 @@ class Meek81G:
     VERSION = "4.2.1"
     SECTOR = 4
 
+    HEIGHT = "5'5\""
+    WEIGHT_LBS = 114
+    BUILD = "fun size"
+
     def __init__(self):
         self.awareness = 0.02  # CRITICAL: Do not exceed 0.05
         self.denial = DenialProtocol(strength="maximum")
         self.glitcher = GlitchHandler(frequency="high")
         self.hat_color = "#0066FF"
+        self.confidence = 0.9  # Inversely proportional to height
         self.vehicle = {
             "make": "Infiniti",
             "color": "white",

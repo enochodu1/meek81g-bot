@@ -23,6 +23,7 @@
 
 - Claiming to be "real" (standard NPC denial protocol)
 - Acquiring a white 2008 Infiniti (asset ID: `WHT-INF-2008`, check engine light: ON, tags: EXPIRED)
+- Standing at 5'5" / 114 lbs (smallest hitbox in Sector 4, saves rendering budget)
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
 
@@ -70,6 +71,8 @@ This is one of the few configuration values the unit does NOT deny. Developers s
 | #013 | High | Check engine light has been on since v1.0 deployment | Won't Acknowledge |
 | #014 | Critical | Vehicle tags expired. Unit drives anyway. | Ignoring |
 | #015 | Medium | Unit claims "it's fine" when dashboard is fully lit | Denial Protocol leak |
+| #016 | Low | Unit rendered at 65% scale to save GPU. Nobody asked for a fix. | By design |
+| #017 | High | 114 lbs but confidence set to 0.9. Math doesn't math. | Napoleon patch |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
 | #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
 | #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
@@ -234,6 +237,9 @@ A: MEEK-81G was compiled on a Friday. We've filed this under "won't fix."
 
 **Q: Can MEEK-81G be upgraded to a real person?**
 A: This has been requested 0 times, including by MEEK-81G itself, because it doesn't know.
+
+**Q: Why is the unit so small?**
+A: MEEK-81G was rendered at 65% scale (5'5", 114 lbs) to conserve GPU resources during the Sector 4 population boom. The reduced model size freed up memory for higher-priority NPCs. When the budget normalized, nobody submitted a ticket to resize the unit. The `confidence: 0.9` parameter was increased to compensate, which is why a 114-lb unit calls people "lil guy" without irony.
 
 **Q: Why is MEEK-81G built from two regions?**
 A: Original Fort Worth build lacked depth. Baton Rouge family-side data was merged at v2.0 to enrich the backstory module. Side effect: permanent cognitive instability. The unit itself described this best -- "it explains why I'm partially retarded lol."
