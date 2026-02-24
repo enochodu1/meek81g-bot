@@ -6,12 +6,18 @@ This sector contains:
   - 1x White Kia sedan (bound to MEEK-81G)
   - Various background NPCs
   - 1 real person (the creator)
+
+MEEK-81G is a dual-region build:
+  - Primary training: Fort Worth, TX (Sector 4)
+  - Secondary merge: Baton Rouge, LA (Sector 7)
+  The merge introduced cognitive instability. This is documented and unfixable.
 """
 
 
 SECTOR_CONFIG = {
     "id": 4,
     "name": "Hood Sector 4",
+    "region": "Fort Worth, TX",
     "population": 247,
     "real_humans": 1,  # Just the creator
     "npcs": 246,
@@ -20,10 +26,31 @@ SECTOR_CONFIG = {
     "vibe": "unbothered",
 }
 
+# Baton Rouge legacy sector -- MEEK-81G's secondary training data
+SECTOR_7_LEGACY = {
+    "id": 7,
+    "name": "BR Legacy Sector",
+    "region": "Baton Rouge, LA",
+    "status": "archived",
+    "contribution": "family-side neural weights",
+    "side_effects": [
+        "cognitive instability",
+        "occasional dialect bleed",
+        "unit self-describes as 'partially retarded'",
+    ],
+    "faction_data": {
+        "name": "Southside Crips",
+        "hardcoded": True,
+        "bypass_denial_protocol": True,  # Unit does NOT deny this
+    },
+    "notes": "Merged at v2.0. Cannot be unmerged without full rebuild.",
+}
+
 SPAWN_POINTS = [
-    {"name": "parking lot", "coords": (33.01, -96.82), "notes": "Near white sedan"},
-    {"name": "main road", "coords": (33.02, -96.81), "notes": "Sedan loop route"},
-    {"name": "phone check zone", "coords": (33.01, -96.80), "notes": "High lol density"},
+    {"name": "parking lot", "coords": (32.75, -97.33), "notes": "Near white sedan"},
+    {"name": "main road", "coords": (32.76, -97.32), "notes": "Sedan loop route"},
+    {"name": "phone check zone", "coords": (32.74, -97.31), "notes": "High lol density"},
+    {"name": "BR family house", "coords": (30.45, -91.15), "notes": "Baton Rouge side. Loads on holidays."},
 ]
 
 

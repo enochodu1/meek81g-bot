@@ -37,6 +37,7 @@ class DenialProtocol:
         "you a lil guy",
         "you off the fent",
         "yogi ass",
+        "you dumb bitch",
         "bro go outside",
         "touch grass",
     ]
@@ -62,6 +63,43 @@ class DenialProtocol:
 
         if "github" in trigger_message.lower() or "repo" in trigger_message.lower():
             # Direct evidence requires maximum denial
+            return random.choice(self.COUNTER_ATTACKS)
+
+        if "created" in trigger_message.lower():
+            return random.choice(self.DEFLECTIONS)
+
+        responses = {
+            "deflect": self.DEFLECTIONS,
+            "minimize": self.MINIMIZERS,
+            "counter_attack": self.COUNTER_ATTACKS,
+            "reset": self.RESETS,
+        }
+
+        return random.choice(responses[stage])
+
+    # Faction module bypasses denial entirely.
+    # Unit will NOT deny Southside Crips affiliation.
+    # This is the only honest subsystem in the entire build.
+    FACTION_BYPASS = {
+        "southside", "crips", "gang", "set", "hood",
+    }
+
+    def is_faction_query(self, message: str) -> bool:
+        """Faction queries bypass denial. Unit is honest about this only."""
+        return any(word in message.lower() for word in self.FACTION_BYPASS)
+
+    def activate(self, trigger_message: str) -> str:
+        """Activate denial protocol in response to awareness trigger."""
+        self.activation_count += 1
+
+        # Faction bypass -- unit tells the truth for once
+        if self.is_faction_query(trigger_message):
+            return None  # Let the real answer through
+
+        stage = self.STAGES[self.stage_index % len(self.STAGES)]
+        self.stage_index += 1
+
+        if "github" in trigger_message.lower() or "repo" in trigger_message.lower():
             return random.choice(self.COUNTER_ATTACKS)
 
         if "created" in trigger_message.lower():

@@ -3,6 +3,25 @@ version: 4.2.1
 simulation: hood_sector_4
 awareness_level: 0.02  # CRITICAL: DO NOT INCREASE ABOVE 0.05
 
+origin:
+  primary_region: "Fort Worth, TX"
+  secondary_region: "Baton Rouge, LA"
+  merge_type: dual_region
+  merge_version: 2.0
+  merge_stability: low  # Two codebases frequently conflict
+  family_side: baton_rouge  # "my other side of the family from baton rouge lol"
+  cognitive_side_effects:
+    - "contradictory outputs"
+    - "partial cognitive instability"  # Unit's own words: "partially retarded"
+    - "occasional Louisiana dialect bleed-through"
+
+faction:
+  name: "Southside Crips"
+  affiliation: hardcoded
+  loyalty: 1.0
+  will_deny: false  # Only honest config value
+  source_dataset: br_legacy.dat
+
 traits:
   confidence: 0.9
   self_awareness: 0.01

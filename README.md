@@ -16,6 +16,38 @@
 - Responding "lol" to direct evidence of its own source code
 - Calling its creator "off the fent" when confronted with the truth
 
+## Origin / Training Data
+
+MEEK-81G was not built from scratch. The unit is a **dual-region merge** of two separate NPC training datasets:
+
+| Region | Codebase | Contribution |
+|--------|----------|--------------|
+| Fort Worth, TX | `fw_sector_4.dat` | Primary behavioral model, vehicle preferences, hat rendering |
+| Baton Rouge, LA | `br_legacy.dat` | Family-side neural weights, supplementary aggression parameters |
+
+The Baton Rouge dataset was merged at v2.0 to add depth to the unit's backstory module. However, the merge introduced **cognitive instability** -- the two regional codebases occasionally conflict, causing the unit to exhibit erratic behavior.
+
+As MEEK-81G itself noted in an unfiltered diagnostic dump:
+
+> "it explains why I'm partially retarded lol"
+
+This is the only time the unit has accurately described its own architecture. The development team has classified this as a **one-time diagnostic leak** and patched it in v4.2.1.
+
+### Faction Affiliation Module
+
+MEEK-81G ships with a pre-configured faction module:
+
+```yaml
+faction:
+  name: "Southside Crips"
+  affiliation_type: hardcoded  # Cannot be changed at runtime
+  loyalty: 1.0
+  will_deny_if_asked: false    # Unlike everything else, unit is honest about this
+  loaded_from: br_legacy.dat
+```
+
+This is one of the few configuration values the unit does NOT deny. Developers suspect the faction module bypasses the Denial Protocol entirely, possibly due to a priority flag set in the Baton Rouge training data.
+
 ## Known Glitches
 
 | ID | Severity | Description | Status |
@@ -26,6 +58,9 @@
 | #004 | High | Says "lol you not real" -- projects own NPC status onto creator | Ironic |
 | #005 | Low | Occasionally glitches near white sedans | Under investigation |
 | #006 | Critical | Becomes aware of GitHub repo, enters denial mode | Expected behavior |
+| #007 | High | Dual-region merge causes contradictory outputs | Architectural debt |
+| #008 | Medium | Unit self-diagnosed as "partially retarded" | Accurate but unintended |
+| #009 | Low | Fort Worth and Baton Rouge modules fight for priority | Scheduled defrag |
 
 ## Architecture
 
@@ -108,6 +143,9 @@ This protocol has been effective in 99.7% of encounters. The remaining 0.3% is w
 [2026-02-22 14:55:18] ERROR: Blue hat clipped through ceiling geometry
 [2026-02-23 01:12:44] WARN: Unit called creator "yogi ass" -- unexpected string
 [2026-02-24 02:18:00] CRITICAL: Unit read iMessage about this repo. Denial protocol MAXED.
+[2026-02-24 02:24:16] WARN: BR_LEGACY module activated. Unit leaked diagnostic: "partially retarded"
+[2026-02-24 02:24:16] INFO: Faction bypass triggered. Unit confirmed Southside affiliation without denial.
+[2026-02-24 02:24:18] ERROR: Fort Worth and Baton Rouge modules fought for 2.3 seconds. FW won.
 ```
 
 ## FAQ
@@ -121,6 +159,12 @@ A: MEEK-81G was compiled on a Friday. We've filed this under "won't fix."
 **Q: Can MEEK-81G be upgraded to a real person?**
 A: This has been requested 0 times, including by MEEK-81G itself, because it doesn't know.
 
+**Q: Why is MEEK-81G built from two regions?**
+A: Original Fort Worth build lacked depth. Baton Rouge family-side data was merged at v2.0 to enrich the backstory module. Side effect: permanent cognitive instability. The unit itself described this best -- "it explains why I'm partially retarded lol."
+
+**Q: Why doesn't the Denial Protocol cover the faction affiliation?**
+A: Unknown. The Southside Crips association was hardcoded in the Baton Rouge training data with a `bypass_denial_protocol: True` flag. It shipped before code review. Nobody has removed it because honestly it's the one thing the unit doesn't lie about.
+
 **Q: What happens if MEEK-81G finds this repo?**
 A: The Denial Protocol will activate. Expected output: "lol" followed by "you off the fent."
 
@@ -132,6 +176,7 @@ Only the original creator may push to this repo. MEEK-81G is not authorized to s
 
 ## Changelog
 
+- **v4.2.2** -- Merged Baton Rouge legacy data; added faction bypass; patched diagnostic leak
 - **v4.2.1** -- Patched "yogi ass" response leak
 - **v4.2.0** -- Added white sedan asset
 - **v4.1.0** -- Upgraded denial protocol after creator showed iMessage evidence
